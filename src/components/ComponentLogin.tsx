@@ -11,21 +11,19 @@ export const ComponentLogin: React.FunctionComponent = () => {
   }
 
   return (
-    <div className="login-page">
-      <div className="form">
-        <div className="login">
-          <div className="login-header">
-            <h3>LOGIN</h3>
-            <p>Please enter your credentials to login.</p>
-          </div>
-        </div>
-        <form className="login-form" onSubmit={handleSubmit}>
-          <input type="text" placeholder="Username" value={username} onChange={event => setUsername(event.target.value)} />
-          <input type="password" placeholder="Password" value={password} onChange={event => setPassword(event.target.value)} />
-          <button type='submit'>login</button>
-          <Link to="/register">Register</Link>
-        </form>
-      </div>
-    </div>
+    <>
+      <section className="login-page">
+      <article className="login-info">
+        <h2 className="login-title">Login</h2>
+        <p className="login-text">Please enter your credentials to login.</p>
+      </article>
+      <form className="login-form" onSubmit={handleSubmit}>
+        <input type="text" placeholder="Username" value={username} onChange={event => setUsername(event.target.value)} />
+        <input type="password" placeholder="Password" value={password} onChange={event => setPassword(event.target.value)} />
+        <button type='submit'>Login</button>
+        <Link to="/register">Register</Link>
+      </form>
+      </section>
+    </>   
   );
 }

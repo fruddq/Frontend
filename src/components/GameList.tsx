@@ -16,17 +16,18 @@ export const GameList: React.FunctionComponent = () => {
   }
 
   return (
-    <div>
+    <section className="create-table">
       <button className="create-table-button" onClick={createTable}>
         Create Table
       </button>
-      <div className="game-list">
+      <article className="game-list">
+        <h2 className="game-list-title">Current Games</h2>
         {tables.map((tableID) => (
-          <div key={tableID}>
-            Table {tableID} <Link href={`/table/${tableID}`}>Join Table</Link>
+          <div className="created-table" key={tableID}>
+            Table {tableID}:<Link className="crated-table-link" href={`/table/${tableID}`}> Join Table</Link>
           </div>
         ))}
-      </div>
-    </div>
+      </article>
+    </section>
   )
 }

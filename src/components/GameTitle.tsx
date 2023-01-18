@@ -1,8 +1,10 @@
 import React from 'react'
+import peaceSign from '../assets/svg/peaceSign.svg'
 
 export const GameTitle: React.FunctionComponent<{
 }> = () => (
-  <div>
-    <h1 className="title">Big 2</h1>
-  </div>
+  <header>
+  <h1 className="big2-title">Big </h1>
+  <img className="peace-sign" src={peaceSign} alt="peace"/>
+</header>  
 )

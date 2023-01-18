@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+//title
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .big2-title {
+    font-size: 8rem;
+    margin-left: 12%;
+    // font-family: 'Great Vibes', cursive;
+    // font-family: 'Satisfy', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    text-shadow: 10px 10px 10px #070707;
+    letter-spacing: 0.4rem;
+  }
+
+  .peace-sign {
+    width: 300px;
+    margin-left: 2%;
+    filter: drop-shadow(2px 2px 5px #666);
+  }
+}
+
+//login+register page
+.login-page {
+  border: 2px solid orange;
+  background-color: #1c1c1c;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .login-info {
+    text-align: center;
+  }
+
+  .login-form {
+    gap: 5px;
+
+    >button {
+      width: 58%;
+      height: 20px;
+    }
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >input {
+      padding: 10px;
+      border-radius: 5px;
+      width: 60%;
+      border: none;
+      background-color: #4e4e4e;
+      text-align: center;
+    }
+
+    >a {
+      text-decoration: none;
+      color: rgb(50, 50, 215);
+      font-size: 14px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+
+      &:hover {
+        color: red;
+
+      }
+    }
+
+    >button {
+      background-color: orange;
+      color: white;
+      height: 32px;
+      width: 60%;
+      padding: 10px 20px;
+      margin-top: 2px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darkorange;
+
+      }
+    }
+  }
+}
+
+
+//create table
+.create-table {
+  text-align: center;
+
+  .create-table-button {
+    height: 45px;
+    width: 20%;
+    border-radius: 10px;
+    background-color: orange;
+    font-size: 1.2rem;
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(255, 123, 0);
+    }
+  }
+
+  .game-list {
+    margin: 10px auto;
+    padding-bottom: 40px;
+    font-size: 1.1rem;
+    background-color: #1c1c1c;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    max-height: 400px;
+    scroll-behavior: smooth;
+
+    .game-list-title {
+      padding: 0;
+    }
+
+    .created-table {
+      background-color: #1181B2;
+      border-radius: 10px;
+      height: 30px;
+      width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 5px black;
+
+      .crated-table-link {
+        text-decoration: none;
+        color: rgb(0, 52, 100);
+        margin-left: 10px;
+      }
+    }
+  }
+}
