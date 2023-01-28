@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .big2-title {
+  font-size: 8rem;
+  margin-left: 12%;
+  font-family: "Shadows Into Light", cursive;
+  text-shadow: 10px 10px 10px #070707;
+  letter-spacing: 0.4rem;
+}
+header .peace-sign {
+  width: 300px;
+  margin-left: 2%;
+  filter: drop-shadow(2px 2px 5px #666);
+}/*# sourceMappingURL=main.css.map */
