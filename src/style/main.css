@@ -1,17 +1,60 @@
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .big2-title {
-  font-size: 8rem;
-  margin-left: 12%;
-  font-family: "Shadows Into Light", cursive;
-  text-shadow: 10px 10px 10px #070707;
-  letter-spacing: 0.4rem;
-}
-header .peace-sign {
-  width: 300px;
-  margin-left: 2%;
-  filter: drop-shadow(2px 2px 5px #666);
+@media only screen and (max-width: 480px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .big2-title {
+    font-size: 8rem;
+    margin-left: 15%;
+    font-family: "Shadows Into Light", cursive;
+    text-shadow: 10px 10px 10px #070707;
+    letter-spacing: 0.4rem;
+  }
+  header .peace-sign {
+    width: 300px;
+    margin-left: 2%;
+    filter: drop-shadow(2px 2px 5px #666);
+  }
+  .game-header {
+    height: 10vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .game-header .big2-title {
+    font-size: 5rem;
+  }
+  .game-header .peace-sign {
+    width: 123px;
+  }
+  .lobby-loggedin-player {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  .lobby-game-name {
+    text-align: center;
+    height: 5vh;
+  }
+  .lobby-game-table {
+    background-color: rgb(92, 30, 30);
+    height: 50vh;
+    width: 100vw;
+  }
+  .lobby-game-table .lobby-seat {
+    height: 45px;
+    width: 152px;
+  }
+  .lobby-opt-section {
+    background-color: whitesmoke;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .lobby-opt-section .lobby-opt-btn {
+    height: 39px;
+    width: 124px;
+  }
 }/*# sourceMappingURL=main.css.map */

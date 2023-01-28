@@ -1,0 +1,46 @@
+.game-header{
+    height: 10vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .big2-title {
+        font-size: 5rem;
+    }
+    .peace-sign{
+        width: 123px;
+    }
+}
+
+
+.lobby-loggedin-player {
+position: fixed;
+left: 0;
+top:0;
+}
+
+.lobby-game-name {
+    text-align: center;
+    height: 5vh;
+}
+
+.lobby-game-table{
+    background-color: rgb(92, 30, 30);
+    height: 50vh;
+    width: 100vw;
+    .lobby-seat {
+        height: 45px;
+        width: 152px;
+    }
+}
+
+.lobby-opt-section{
+    background-color: whitesmoke;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .lobby-opt-btn {
+        height: 39px;
+        width: 124px;
+    }
+}
