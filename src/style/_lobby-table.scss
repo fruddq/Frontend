@@ -58,7 +58,7 @@
 }
 
 .game-header{
-    height: 25vh;
+    height: 15vh;
     top: 50px;
     .big2-title {
         font-size: 5rem;
@@ -79,6 +79,9 @@ z-index: 5;
 .lobby-game-name {
     text-align: center;
     height: 5vh;
+    background-color: rgb(1, 85, 98);
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .lobby-game-table{
