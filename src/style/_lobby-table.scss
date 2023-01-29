@@ -1,7 +1,65 @@
+.hidden{
+    display: none;
+}
+
+.bg-popups {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.728);
+    z-index: 10;
+}
+
+.lobby-popup-starting-game {
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 20%;
+    width: 60%;
+    position: fixed;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+
+    .lobby-popup-starting-text {
+        text-align: center;
+    }
+}
+
+.lobby-popup-leaving-game {
+    background-color: rgb(51, 51, 51);
+    border: 2px solid black;
+    height: 20%;
+    width: 60%;
+    position: fixed;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    .lobby-popup-leaving-text{
+        text-align: center;
+    }
+    .lobby-leave-btn{
+        width: 50%;
+        height: 30px;
+        text-transform: uppercase;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+    .lobby-leave-yes-btn {
+        background-color: blue;
+    }
+    .lobby-leave-no-btn{
+        background-color: rgb(0, 54, 0);
+    }
+}
+
 .game-header{
-    height: 10vh;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    height: 25vh;
+    top: 50px;
     .big2-title {
         font-size: 5rem;
     }
@@ -15,6 +73,7 @@
 position: fixed;
 left: 0;
 top:0;
+z-index: 5;
 }
 
 .lobby-game-name {
