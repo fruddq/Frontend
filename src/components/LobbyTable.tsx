@@ -20,9 +20,10 @@ export const Table: React.FunctionComponent<{
       <button className="lobby-opt-btn">
         <Link href="/">To Home</Link>
       </button>
-      <button className="lobby-opt-btn">Escape?</button>
-      <button className="lobby-opt-btn">BTN</button>
-      <button className="lobby-opt-btn">BTN</button>
+      <button className="lobby-opt-btn">Escape</button>
+      <br />
+      <button className="lobby-opt-btn">BTN1 opt</button>
+      <button className="lobby-opt-btn">BTN2 opt</button>
     </section>
   </div>
 );

@@ -34,13 +34,29 @@ top:0;
 
 .lobby-opt-section{
     background-color: whitesmoke;
-    height: 20vh;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     .lobby-opt-btn {
         height: 39px;
         width: 124px;
+        text-align: center;
     }
+}
+
+/* Add margin to the bottom of the first two buttons */
+.lobby-opt-btn:nth-child(1),
+.lobby-opt-btn:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+/* Style the br element so that it clears the float */
+br {
+    clear: both;
 }
