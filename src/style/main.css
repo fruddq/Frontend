@@ -94,10 +94,32 @@
     background-color: rgb(92, 30, 30);
     height: 50vh;
     width: 100vw;
+    position: relative;
   }
   .lobby-game-table .lobby-seat {
     height: 45px;
     width: 152px;
+    position: absolute;
+  }
+  .lobby-seat:nth-child(1) { /* first seat */
+    top: 0; /* position at the top */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%); /* center horizontally */
+  }
+  .lobby-seat:nth-child(2) { /* second seat */
+    left: 0; /* position at the left */
+    top: 50%; /* center vertically */
+    transform: translateY(-50%); /* center vertically */
+  }
+  .lobby-seat:nth-child(3) { /* third seat */
+    right: 0; /* position at the right */
+    top: 50%; /* center vertically */
+    transform: translateY(-50%); /* center vertically */
+  }
+  .lobby-seat:nth-child(4) { /* fourth seat */
+    bottom: 0; /* position at the bottom */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%); /* center horizontally */
   }
   .lobby-opt-section {
     background-color: whitesmoke;
@@ -109,11 +131,14 @@
     gap: 7px;
     padding-top: 20px;
     padding-bottom: 20px;
+    align-content: center;
   }
   .lobby-opt-section .lobby-opt-btn {
     height: 39px;
     width: 124px;
     text-align: center;
+    margin-right: 7px;
+    margin-left: 7px;
   }
   /* Add margin to the bottom of the first two buttons */
   .lobby-opt-btn:nth-child(1),
