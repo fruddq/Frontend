@@ -1,6 +1,7 @@
 import React from "react";
 import { Router, Route, BaseLocationHook } from "wouter";
 import { useLocationProperty, navigate } from "wouter/use-location";
+import { GameTableLandscape } from "./components/GameTable-mobile";
 import { Table } from "./components/LobbyTable";
 import { About } from "./routes/About";
 import { Home } from "./routes/Home";
@@ -23,5 +24,6 @@ export const App: React.FunctionComponent = () => (
     <Route path="/table/:tableID">
       {({ tableID }) => <Table tableID={parseInt(tableID || "0", 10)} />}
     </Route>
+    <Route path="/GameTable" component={GameTableLandscape} />
   </Router>
 );

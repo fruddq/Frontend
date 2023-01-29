@@ -37,7 +37,7 @@ export const Table: React.FunctionComponent<{
       <button className="lobby-opt-btn">Escape</button>
       <br />
       <button className="lobby-opt-btn">
-        <Link to="/GameTable-mobile">Start Game</Link>
+        <Link to="/GameTable">Start Game</Link>
       </button>
       <button className="lobby-opt-btn">BTN2 opt</button>
     </section>
