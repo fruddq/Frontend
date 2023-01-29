@@ -82,7 +82,7 @@
   }
   .lobby-loggedin-player {
     position: fixed;
-    left: 0;
+    left: 10px;
     top: 0;
     z-index: 5;
   }
