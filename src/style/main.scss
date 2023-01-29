@@ -3,3 +3,7 @@
     @import 'gameTitle'; 
     @import 'lobby-table'; 
 }
+
+@media (orientation: landscape) {
+    @import 'gameTable-mobile-landscape';
+  }
