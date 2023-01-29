@@ -1,0 +1,35 @@
+.hidden {
+    display: none;
+}
+
+.game-table-info {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    .game-table-infotext {
+        font-size: 0.5rem;
+    }
+}
+
+.game-table-menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    .game-table-menu-btn{
+        position: fixed;
+        right: 10px;
+        height: 30px;
+        width: 60px;
+    }
+    .game-table-dropdown {
+        position: fixed;
+        right: 10px;
+        top: 40px;
+        width: auto;
+        background-color: grey;
+        .game-table-links >li {
+            list-style-type: none;
+            padding: 5px;
+        }
+    }
+}

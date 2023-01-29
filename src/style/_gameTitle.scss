@@ -2,6 +2,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
   
     .big2-title {
       font-size: 8rem;
@@ -14,7 +16,7 @@ header {
     }
   
     .peace-sign {
-      width: 300px;
+      width: 100px;
       margin-left: 2%;
       filter: drop-shadow(2px 2px 5px #666);
     }

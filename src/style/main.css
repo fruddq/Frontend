@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   header .big2-title {
     font-size: 8rem;
@@ -12,7 +14,7 @@
     letter-spacing: 0.4rem;
   }
   header .peace-sign {
-    width: 300px;
+    width: 100px;
     margin-left: 2%;
     filter: drop-shadow(2px 2px 5px #666);
   }
@@ -72,7 +74,7 @@
   }
   .game-header {
     height: 15vh;
-    top: 50px;
+    top: 100px;
   }
   .game-header .big2-title {
     font-size: 5rem;
@@ -151,5 +153,40 @@
   /* Style the br element so that it clears the float */
   br {
     clear: both;
+  }
+}
+@media (orientation: landscape) {
+  .hidden {
+    display: none;
+  }
+  .game-table-info {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  .game-table-info .game-table-infotext {
+    font-size: 0.5rem;
+  }
+  .game-table-menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  .game-table-menu .game-table-menu-btn {
+    position: fixed;
+    right: 10px;
+    height: 30px;
+    width: 60px;
+  }
+  .game-table-menu .game-table-dropdown {
+    position: fixed;
+    right: 10px;
+    top: 40px;
+    width: auto;
+    background-color: grey;
+  }
+  .game-table-menu .game-table-dropdown .game-table-links > li {
+    list-style-type: none;
+    padding: 5px;
   }
 }/*# sourceMappingURL=main.css.map */
