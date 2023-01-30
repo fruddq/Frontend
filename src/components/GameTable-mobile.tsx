@@ -12,6 +12,7 @@ export const GameTableLandscape: React.FunctionComponent<{}> = () => (
     </div>
     <div className="game-table-menu">
       <button className="game-table-menu-btn">Menu</button>
+      {/* OBS: Added class hinden during workflow */}
       <div className="game-table-dropdown hidden">
         <ul className="game-table-links">
           <li>
