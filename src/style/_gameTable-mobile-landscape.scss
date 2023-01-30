@@ -17,10 +17,12 @@
     top: 10px;
     right: 10px;
     .game-table-menu-btn{
+        background-color: blue;
+        border: none;
         position: fixed;
         right: 10px;
         height: 30px;
-        width: 60px;
+        width: 50px;
     }
     .game-table-dropdown {
         position: fixed;
@@ -34,7 +36,6 @@
         }
     }
 }
-
 
 .game-table-top {
     height: 10vh;
@@ -84,11 +85,17 @@
 .game-table-player:nth-child(1) {
     top: -50px;
     left: calc(50% - 50px); /* center the button horizontally */
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
 }
   
 .game-table-player:nth-child(2) {
     top: calc(50% - 25px); /* center the button vertically */
     right: 10px;
+    background-color: rgb(211, 160, 211);
+    border: none;
+    border-radius: 5px;
 }
   
 // .game-table-player:nth-child(3) {
@@ -99,6 +106,9 @@
 .game-table-player:nth-child(3) {
     bottom: calc(50%); /* center the button vertically */
     left: 10px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
 }
 
 .game-table-placeholder-cards{
