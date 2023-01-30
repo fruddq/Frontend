@@ -24,10 +24,11 @@ export const GameTableLandscape: React.FunctionComponent<{}> = () => (
         </ul>
       </div>
     </div>
-    <section>
+    <section className="game-table-top"></section>
+    <section className="game-table-playing-container">
       <button className="game-table-player">Player 1</button>
       <button className="game-table-player">Player 2</button>
-      <button className="game-table-player">Player 3</button>
+      {/* <button className="game-table-player">Player 3</button> */}
       <button className="game-table-player">Player 4</button>
 
       <button className="game-table-pass-btn">Pass</button>

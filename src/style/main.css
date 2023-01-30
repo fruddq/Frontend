@@ -160,6 +160,7 @@
     display: none;
   }
   .game-table-info {
+    display: block;
     position: fixed;
     top: 10px;
     left: 10px;
@@ -188,5 +189,64 @@
   .game-table-menu .game-table-dropdown .game-table-links > li {
     list-style-type: none;
     padding: 5px;
+  }
+  .game-table-top {
+    height: 10vh;
+    width: 100%;
+  }
+  .game-table-playing-container {
+    position: relative;
+  }
+  .game-table-playing-container .game-table-player {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    z-index: 5;
+  }
+  .game-table-playing-container .game-table-playing-field {
+    height: 27vh;
+    width: 70%;
+    background-color: rgb(117, 34, 34);
+    text-align: center;
+    margin: 0 auto; /* center the element horizontally */
+    max-width: 100%; /* make the element responsive */
+    position: relative;
+  }
+  .game-table-playing-container .game-table-pass-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 30px;
+    z-index: 5;
+    background-color: red;
+  }
+  .game-table-playing-container .game-table-play-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    z-index: 5;
+    background-color: rgb(3, 69, 3);
+  }
+  .game-table-player:nth-child(1) {
+    top: -50px;
+    left: calc(50% - 50px); /* center the button horizontally */
+  }
+  .game-table-player:nth-child(2) {
+    top: calc(50% - 25px); /* center the button vertically */
+    right: 10px;
+  }
+  .game-table-player:nth-child(3) {
+    bottom: 50%; /* center the button vertically */
+    left: 10px;
+  }
+  .game-table-placeholder-cards {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background-color: grey;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
